@@ -1,0 +1,341 @@
+nav {
+    width: 100%;
+    box-shadow: 1px 1px 10px 1px #cbc9c900 !important;
+    border-bottom: 1px solid #cbc9c949;
+    z-index: 10;
+    position: fixed;
+    background-color: #fff;
+
+
+    .container-nav {
+        padding-top: 30px;
+        width: 50%;
+        margin: auto;
+        position: relative;
+        bottom: -11px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-between;
+        padding-bottom: 10px;
+
+        .sh {
+            width: 170px;
+            height: 170px;
+            position: absolute;
+            bottom:  -30%;
+            right: -50%;
+
+
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            font-size: 20px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+
+
+
+
+        }
+
+    }
+
+    .active-link {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 0px 10px;
+        border-bottom: solid 3px #86b7fe;
+
+
+        svg {
+            path {
+                fill: #86b7fe;
+            }
+
+        }
+    }
+
+    .link {
+        text-decoration: none;
+        font-size: 20px;
+        padding: 0px 10px;
+        border-bottom: solid 3px #86b6fe00;
+
+
+
+    }
+
+
+}
+
+
+
+
+
+
+@media(max-width:499px) {
+
+    nav {
+        width: 100%;
+        box-shadow: 1px 1px 10px 1px #cbc9c900 !important;
+        border-bottom: 1px solid #cbc9c949;
+        z-index: 10;
+        position: fixed;
+        background-color: #fff;
+    
+    
+        .container-nav {
+            padding-top: 40px;
+            width: 100%;
+            margin: auto;
+            position: relative;
+            bottom: -11px;
+            padding-bottom: 10px;
+    
+            .sh {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                bottom:  35%;
+                right: -5%;
+                z-index: -1 !important;
+    
+    
+            }
+    
+            .nav-left {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                font-size: 20px;
+                font-weight: 600;
+    
+                cursor: pointer;
+
+                svg{
+                    z-index: 10;
+
+                    width: 30px;
+                    height: 30px;
+
+                }
+    
+    
+    
+    
+    
+            }
+    
+        }
+    
+        .active-link {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0px 10px;
+            border-bottom: solid 3px #86b7fe;
+    
+    
+            svg {
+                path {
+                    fill: #86b7fe;
+                }
+    
+            }
+        }
+    
+        .link {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0px 10px;
+            border-bottom: solid 3px #86b6fe00;
+    
+    
+    
+        }
+    
+    
+    }
+    
+
+}
+
+@media(min-width:500px) and (max-width:766px) {
+
+    nav {
+        width: 100%;
+        box-shadow: 1px 1px 10px 1px #cbc9c900 !important;
+        border-bottom: 1px solid #cbc9c949;
+        z-index: 10;
+        position: fixed;
+        background-color: #fff;
+    
+    
+        .container-nav {
+            padding-top: 40px;
+            width: 80%;
+            margin: auto;
+            position: relative;
+            bottom: -11px;
+            padding-bottom: 10px;
+    
+            .sh {
+                width: 130px;
+                height: 130px;
+                position: absolute;
+                bottom:  20%;
+                right: -20%;
+                z-index: -1 !important;
+    
+    
+            }
+    
+            .nav-left {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                font-size: 20px;
+                font-weight: 600;
+    
+                cursor: pointer;
+
+                svg{
+                    z-index: 10;
+
+                    width: 40px;
+                    height: 40px;
+
+                }
+    
+    
+    
+    
+    
+            }
+    
+        }
+    
+        .active-link {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0px 10px;
+            border-bottom: solid 3px #86b7fe;
+    
+    
+            svg {
+                path {
+                    fill: #86b7fe;
+                }
+    
+            }
+        }
+    
+        .link {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0px 10px;
+            border-bottom: solid 3px #86b6fe00;
+    
+    
+    
+        }
+    
+    
+    }
+}
+
+@media(min-width:767px) and (max-width:991px) {
+
+    nav {
+        width: 100%;
+        box-shadow: 1px 1px 10px 1px #cbc9c900 !important;
+        border-bottom: 1px solid #cbc9c949;
+        z-index: 10;
+        position: fixed;
+        background-color: #fff;
+    
+    
+        .container-nav {
+            padding-top: 40px;
+            width: 60%;
+            margin: auto;
+            position: relative;
+            bottom: -11px;
+            padding-bottom: 10px;
+    
+            .sh {
+                width: 130px;
+                height: 130px;
+                position: absolute;
+                bottom:  20%;
+                right: -20%;
+                z-index: -1 !important;
+    
+    
+            }
+    
+            .nav-left {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                font-size: 20px;
+                font-weight: 600;
+    
+                cursor: pointer;
+
+                svg{
+                    z-index: 10;
+
+                    width: 40px;
+                    height: 40px;
+
+                }
+    
+    
+    
+    
+    
+            }
+    
+        }
+    
+        .active-link {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0px 10px;
+            border-bottom: solid 3px #86b7fe;
+    
+    
+            svg {
+                path {
+                    fill: #86b7fe;
+                }
+    
+            }
+        }
+    
+        .link {
+            text-decoration: none;
+            font-size: 20px;
+            padding: 0px 10px;
+            border-bottom: solid 3px #86b6fe00;
+    
+    
+    
+        }
+    
+    
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) {}

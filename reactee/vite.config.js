@@ -3,6 +3,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+
   plugins: [react()],
-  base: '/aaaa/',
+  server: {
+    historyApiFallback: true, // إعادة توجيه الطلبات إلى index.html
+  },
+  base: '/SH-social/',
 })

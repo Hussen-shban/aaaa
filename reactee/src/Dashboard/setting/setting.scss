@@ -1,0 +1,209 @@
+
+.ail{
+    background-color: rgba(128, 128, 128, 0.048);
+    height: 100vh;
+    font-weight: 400;
+
+    .setting {
+        width: 50%;
+        height: 100%;
+        margin: auto;
+        padding-top: 120px;
+        // background-color: rgba(128, 128, 128, 0.048);
+        width: fit-content;
+        .r{
+    
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            width: 98%;
+            margin: auto;
+            justify-content: end;
+    
+            .content {
+                padding: 10px;
+
+                cursor: pointer;
+                flex-grow: 1;
+                border-radius: 5px;
+                background-color: #fff;
+                width: 225px;
+                max-width: 310px;
+                display: flex;
+                flex-direction: column;
+    
+                // height: 250px;
+    
+                .co {
+                    cursor: pointer;
+
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+    
+    
+                    .content-right {
+                        display: flex;
+                        gap: 15px;
+                        cursor: pointer;
+
+
+                    }
+
+                    .content-left{
+                        svg{
+                            width:25px;
+                            // height: 25px;
+                            transform: rotate(270deg);
+                            path{
+                                stroke: gray;
+ 
+
+                            }
+
+                        }
+
+                    }
+    
+    
+    
+                }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            }
+    
+        }
+    
+    
+    
+    
+    
+    
+    
+    }
+}
+
+
+
+
+@media(max-width:499px) {
+
+    .ail{
+        background-color: rgba(128, 128, 128, 0.048);
+        height: 100%;
+        font-weight: 400;
+    
+        .setting {
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            padding-top: 120px;
+            // background-color: rgba(128, 128, 128, 0.048);
+            width: fit-content;
+            .r{
+        
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                width: 98%;
+                margin: auto;
+                justify-content: end;
+        
+                .content {
+                    padding: 10px;
+    
+                    cursor: pointer;
+                    flex-grow: 1;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    width: 225px;
+                    max-width: 1000px;
+                    display: flex;
+                    flex-direction: column;
+        
+                    // height: 250px;
+        
+                    .co {
+                        cursor: pointer;
+    
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: space-between;
+        
+        
+                        .content-right {
+                            display: flex;
+                            gap: 15px;
+                            cursor: pointer;
+                            p{
+                                font-size: 14px;
+                            }
+                            svg
+                            {
+                                width: 25px;
+                                height: 25px;
+                            }
+    
+    
+                        }
+    
+                        .content-left{
+                            svg{
+                                width:25px;
+                                // height: 25px;
+                                transform: rotate(270deg);
+                                path{
+                                    stroke: gray;
+     
+    
+                                }
+    
+                            }
+    
+                        }
+        
+        
+        
+                    }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                }
+        
+            }
+        
+        
+        
+        
+        
+        
+        
+        }
+    }
+
+}
+
+@media(min-width:500px) and (max-width:766px) {}
+
+@media(min-width:767px) and (max-width:991px) {}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) {}

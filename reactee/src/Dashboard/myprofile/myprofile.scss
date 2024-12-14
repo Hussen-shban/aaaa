@@ -1,0 +1,352 @@
+.myprofilee {
+    padding-top:100px;
+
+    .header {
+        padding: 20px 40px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+
+        .profilephoto {
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            p {
+                font-weight: 600;
+                position: absolute;
+                bottom: -30px;
+                right: 10px;
+            }
+
+
+            div {
+                position: relative;
+
+                .photo {
+                    width: 80px;
+                    height: 80px;
+                    overflow: hidden;
+                    border-radius: 50%;
+
+
+                    img {
+                        object-fit: cover;
+
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+
+                label {
+                    position: absolute;
+                    bottom: 0;
+
+                    div {
+                        border: solid 2px #fff;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 50%;
+                        background-color: #86b7fe;
+                        display: grid;
+                        place-items: center;
+
+                        svg {}
+                    }
+
+                    input {
+
+                        display: none;
+                    }
+                }
+
+
+
+
+            }
+        }
+
+        .data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+    }
+
+    .middle {
+        margin-top: 60px;
+        margin-right: 40px;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+
+            p {
+                background-color: #86b7fe;
+                border-radius: 10px;
+                padding: 1px 10px;
+                color: #fff;
+            }
+
+
+        }
+    }
+
+    .footer {
+        margin-top: 40px;
+        border-top: solid 1px #86b6fe31;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding-top: 2px;
+
+        gap: 2px;
+
+        div {
+
+            width: 190px;
+
+            max-width: 250px;
+            // height: 190px;
+            max-height: 250px;
+
+            flex-grow: 1;
+            overflow: hidden;
+
+            img {
+                object-fit: cover;
+                object-position: center;
+
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+    }
+
+    .loadingfooter {
+        margin-top: 40px;
+        border-top: solid 1px #86b6fe31;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding-top: 2px;
+        gap: 1px;
+
+        div {
+
+            width: 190px;
+
+            max-width: 300px;
+
+            height: 250px;
+            background-color: rgba(128, 128, 128, 0.089);
+
+            flex-grow: 1;
+            overflow: hidden;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:499px) {
+
+    .myprofilee {
+        // padding-top:90px;
+    
+        .header {
+            width: 100% !important;
+
+            padding: 0px 0px;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            padding-right: 10px;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0px;
+            flex-wrap: wrap;
+
+            .profilephoto {
+                flex-shrink: 0;
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+
+                p {
+                    width: 80px;
+                    white-space:nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    right: 0px;
+                    position: absolute;
+                    text-align: center;
+                }
+
+
+                div {
+                    position: relative;
+                    width: 100%;
+
+                    .photo {
+                        width: 70px;
+                        height: 70px;
+                        overflow: hidden;
+                        border-radius: 50%;
+
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+
+
+
+
+
+
+                }
+            }
+
+            .data {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-grow: 1;
+                flex-shrink: 1;
+
+                p {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+            .l{
+                padding-left: 9px;
+            }
+
+
+        }
+    
+        .middle {
+            margin-top: 0px;
+            margin-right: 20px;
+    
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+    
+                p {
+                    background-color: #86b7fe;
+                    border-radius: 10px;
+                    padding: 1px 10px;
+                    color: #fff;
+                }
+    
+    
+            }
+        }
+    
+        .footer {
+            margin-top: 20px;
+            border-top: solid 1px #86b6fe31;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: end;
+            padding-top: 2px;
+
+            gap: 2px;
+
+            div {
+
+                width: 100px;
+
+                max-width: 250px;
+                // height: 190px;
+                max-height: 180px;
+
+                flex-grow: 1;
+                overflow: hidden;
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+
+                    width: 100%;
+                    height: 100%;
+                }
+
+            }
+        }
+    
+        .loadingfooter {
+            margin-top: 40px;
+            border-top: solid 1px #86b6fe31;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: end;
+            padding-top: 2px;
+            gap: 1px;
+
+            div {
+
+                width: 100px;
+
+                // max-width: 160px;
+                max-height: 100px;
+                background-color: rgba(128, 128, 128, 0.089);
+
+                flex-grow: 1;
+                overflow: hidden;
+            }
+        }
+    
+    
+    }
+    
+    
+
+}
+
+@media(min-width:500px) and (max-width:766px) {
+ 
+}
+
+@media(min-width:767px) and (max-width:991px) {
+
+}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) {}

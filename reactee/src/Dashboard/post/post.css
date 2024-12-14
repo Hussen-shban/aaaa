@@ -1,0 +1,40 @@
+.post {
+  margin-top: 80px;
+  width: 100%;
+  padding: 20PX;
+}
+.post table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+.post table tr:nth-child(even) {
+  background-color: #f1f7f8;
+}
+.post table th,
+.post table td {
+  border: solid 1px #a0c8cf;
+}
+.post table th {
+  background-color: #74afb9;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+.post table td {
+  padding: 5px;
+  word-wrap: break-word;
+}
+.post table td .photo {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 5px auto;
+  display: grid;
+  place-items: center;
+}
+.post table td .photo img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=post.css.map */

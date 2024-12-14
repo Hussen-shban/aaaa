@@ -1,0 +1,379 @@
+.sco::-webkit-scrollbar {
+  width: 8px;
+}
+.sco::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+.sco::-webkit-scrollbar-thumb {
+  background-color: #86b7fe;
+  border: 2px solid #f1f1f1;
+}
+.sco::-webkit-scrollbar-thumb:hover {
+  background-color: #5a9bd6;
+}
+
+.proo {
+  margin-top: 0px;
+}
+
+.myprofile {
+  padding-top: 100px;
+}
+.myprofile .header {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+.myprofile .header .profilephoto {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.myprofile .header .profilephoto p {
+  font-weight: 600;
+  position: relative;
+}
+.myprofile .header .profilephoto div {
+  position: relative;
+}
+.myprofile .header .profilephoto div .photo {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.myprofile .header .profilephoto div .photo img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.myprofile .header .profilephoto div label {
+  position: absolute;
+  bottom: 0;
+}
+.myprofile .header .profilephoto div label div {
+  border: solid 2px #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #86b7fe;
+  display: grid;
+  place-items: center;
+}
+.myprofile .header .profilephoto div label input {
+  display: none;
+}
+.myprofile .header .data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myprofile .middle {
+  margin-top: 60px;
+  margin-right: 40px;
+}
+.myprofile .middle div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+}
+.myprofile .middle div p {
+  background-color: #86b7fe;
+  border-radius: 10px;
+  padding: 1px 10px;
+  color: #fff;
+}
+.myprofile .footer {
+  margin-top: 40px;
+  border-top: solid 1px rgba(134, 182, 254, 0.1921568627);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding-top: 2px;
+  gap: 2px;
+}
+.myprofile .footer div {
+  width: 190px;
+  max-width: 250px;
+  max-height: 250px;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.myprofile .footer div img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  height: 100%;
+}
+.myprofile .loadingfooter {
+  margin-top: 40px;
+  border-top: solid 1px rgba(134, 182, 254, 0.1921568627);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding-top: 2px;
+  gap: 1px;
+}
+.myprofile .loadingfooter div {
+  width: 190px;
+  max-width: 300px;
+  height: 250px;
+  background-color: rgba(128, 128, 128, 0.089);
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+@media (max-width: 499px) {
+  .myprofile {
+    padding-top: 100px;
+    width: 100%;
+    padding-top: 30px;
+    width: 100vw;
+    position: relative;
+    right: 30px;
+    overflow: hidden !important;
+  }
+  .myprofile .header {
+    width: 100% !important;
+    padding: 0px 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+  .myprofile .header .profilephoto {
+    flex-shrink: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .myprofile .header .profilephoto p {
+    font-weight: 600;
+    position: absolute;
+    bottom: -40px;
+    right: -8px;
+    font-size: 16px;
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .myprofile .header .profilephoto div {
+    position: relative;
+    width: 100%;
+  }
+  .myprofile .header .profilephoto div .photo {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .myprofile .header .profilephoto div .photo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .myprofile .header .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .myprofile .header .data p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .myprofile .header .l {
+    padding-left: 9px;
+  }
+  .myprofile .footer {
+    margin-top: 40px;
+    border-top: solid 1px rgba(134, 182, 254, 0.1921568627);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-top: 2px;
+    gap: 2px;
+  }
+  .myprofile .footer div {
+    width: 100px;
+    max-width: 250px;
+    max-height: 180px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .myprofile .footer div img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .myprofile .loadingfooter {
+    margin-top: 40px;
+    border-top: solid 1px rgba(134, 182, 254, 0.1921568627);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-top: 2px;
+    gap: 1px;
+  }
+  .myprofile .loadingfooter div {
+    width: 100px;
+    max-height: 100px;
+    background-color: rgba(128, 128, 128, 0.089);
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .sco {
+    overflow: hidden;
+  }
+  .sco svg {
+    z-index: 1000;
+  }
+}
+@media (min-width: 500px) and (max-width: 766px) {
+  .myprofile {
+    padding-top: 100px;
+    width: 100%;
+    padding-top: 30px;
+    width: 100vw;
+    position: relative;
+    right: 30px;
+    overflow: hidden !important;
+  }
+  .myprofile .header {
+    width: 100% !important;
+    padding: 0px 0px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    flex-wrap: wrap;
+  }
+  .myprofile .header .profilephoto {
+    flex-shrink: 0;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .myprofile .header .profilephoto p {
+    font-weight: 600;
+    position: absolute;
+    bottom: -40px;
+    right: -8px;
+    font-size: 16px;
+    width: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .myprofile .header .profilephoto div {
+    position: relative;
+    width: 100%;
+  }
+  .myprofile .header .profilephoto div .photo {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .myprofile .header .profilephoto div .photo img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .myprofile .header .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .myprofile .header .data p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .myprofile .header .l {
+    padding-left: 9px;
+  }
+  .myprofile .footer {
+    margin-top: 40px;
+    border-top: solid 1px rgba(134, 182, 254, 0.1921568627);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-top: 2px;
+    gap: 2px;
+  }
+  .myprofile .footer div {
+    width: 90px;
+    max-width: 160px;
+    max-height: 250px;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .myprofile .footer div img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+  .myprofile .loadingfooter {
+    margin-top: 40px;
+    border-top: solid 1px rgba(134, 182, 254, 0.1921568627);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding-top: 2px;
+    gap: 1px;
+  }
+  .myprofile .loadingfooter div {
+    width: 100px;
+    max-height: 100px;
+    background-color: rgba(128, 128, 128, 0.089);
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .sco {
+    overflow: hidden;
+  }
+  .sco svg {
+    z-index: 1000;
+  }
+}/*# sourceMappingURL=userprofile.css.map */

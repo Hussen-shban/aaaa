@@ -1,0 +1,552 @@
+.story {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+  gap: 10px;
+  align-items: center;
+  overflow: hidden;
+  padding-bottom: 70px;
+}
+.story .create {
+  height: 230px;
+  width: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(128, 128, 128, 0.055);
+}
+.story .create .photo {
+  width: 150px;
+  height: 150px;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
+}
+.story .create .photo img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.story .create .plus {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.story .create .plus svg {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+  background-color: #86b7fe;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: relative;
+  top: -10px;
+}
+.story .create p {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.story .create .photouser {
+  width: 100%;
+  height: 100%;
+}
+.story .create .photouser img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.story .create .photoprofile {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  top: 12px;
+  right: 12px;
+  border: solid 3px #86b7fe;
+}
+.story .create .photoprofile img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.story .create .nameprofile {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  color: #fff;
+}
+
+@media (max-width: 499px) {
+  .story {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .story .create {
+    max-width: 95%;
+    height: 200px;
+    max-height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.055);
+    flex-shrink: 1;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .story .create .photo {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    overflow: hidden;
+  }
+  .story .create .photo img {
+    width: 100%;
+    height: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .plus {
+    position: relative;
+    top: -60px;
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .story .create .plus svg {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    background-color: #86b7fe;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .story .create p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -72px;
+  }
+  .story .create .photouser {
+    width: 100%;
+    height: 100%;
+  }
+  .story .create .photouser img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .photoprofile {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 7px;
+    right: 5px;
+    border: solid 3px #86b7fe;
+  }
+  .story .create .photoprofile img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .nameprofile {
+    position: relative;
+    top: -30px;
+    right: -1px;
+    color: #fff;
+  }
+}
+@media (min-width: 500px) and (max-width: 766px) {
+  .story {
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .story .create {
+    max-width: 95%;
+    height: 200px;
+    max-height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.055);
+    flex-shrink: 1;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .story .create .photo {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    overflow: hidden;
+  }
+  .story .create .photo img {
+    width: 100%;
+    height: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .plus {
+    position: relative;
+    top: -60px;
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .story .create .plus svg {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    background-color: #86b7fe;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .story .create p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -72px;
+  }
+  .story .create .photouser {
+    width: 100%;
+    height: 100%;
+  }
+  .story .create .photouser img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .photoprofile {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 7px;
+    right: 5px;
+    border: solid 3px #86b7fe;
+  }
+  .story .create .photoprofile img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .nameprofile {
+    position: relative;
+    top: -30px;
+    right: -15px;
+    color: #fff;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .story {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .story .create {
+    max-width: 95%;
+    height: 200px;
+    max-height: 200px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.055);
+    flex-shrink: 1;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .story .create .photo {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    overflow: hidden;
+  }
+  .story .create .photo img {
+    width: 100%;
+    height: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .plus {
+    position: relative;
+    top: -60px;
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .story .create .plus svg {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    background-color: #86b7fe;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .story .create p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -72px;
+  }
+  .story .create .photouser {
+    width: 100%;
+    height: 100%;
+  }
+  .story .create .photouser img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .photoprofile {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 7px;
+    right: 5px;
+    border: solid 3px #86b7fe;
+  }
+  .story .create .photoprofile img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .nameprofile {
+    position: relative;
+    top: -30px;
+    right: -1px;
+    color: #fff;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .story {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .story .create {
+    max-width: 95%;
+    height: 220px;
+    max-height: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.055);
+    flex-shrink: 1;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .story .create .photo {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    overflow: hidden;
+  }
+  .story .create .photo img {
+    width: 100%;
+    height: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .plus {
+    position: relative;
+    top: -60px;
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .story .create .plus svg {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    background-color: #86b7fe;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .story .create p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -72px;
+  }
+  .story .create .photouser {
+    width: 100%;
+    height: 100%;
+  }
+  .story .create .photouser img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .photoprofile {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 7px;
+    right: 5px;
+    border: solid 3px #86b7fe;
+  }
+  .story .create .photoprofile img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .nameprofile {
+    position: relative;
+    top: -30px;
+    right: -1px;
+    color: #fff;
+  }
+}
+@media (min-width: 1200px) {
+  .story {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 70px;
+  }
+  .story .create {
+    max-width: 99% !important;
+    height: 240px;
+    max-height: 250px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(128, 128, 128, 0.055);
+    flex-shrink: 1;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+  .story .create .photo {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+    overflow: hidden;
+  }
+  .story .create .photo img {
+    width: 100%;
+    height: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .plus {
+    position: relative;
+    top: -60px;
+    margin: auto;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .story .create .plus svg {
+    width: 35px;
+    height: 35px;
+    padding: 2px;
+    background-color: #86b7fe;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  .story .create p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -72px;
+  }
+  .story .create .photouser {
+    width: 100%;
+    height: 100%;
+  }
+  .story .create .photouser img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .photoprofile {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    top: 7px;
+    right: 5px;
+    border: solid 3px #86b7fe;
+  }
+  .story .create .photoprofile img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .story .create .nameprofile {
+    position: relative;
+    top: -30px;
+    right: -40px;
+    color: #fff;
+  }
+}/*# sourceMappingURL=story.css.map */

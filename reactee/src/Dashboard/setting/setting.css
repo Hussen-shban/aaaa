@@ -1,0 +1,110 @@
+.ail {
+  background-color: rgba(128, 128, 128, 0.048);
+  height: 100vh;
+  font-weight: 400;
+}
+.ail .setting {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  padding-top: 120px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.ail .setting .r {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 98%;
+  margin: auto;
+  justify-content: end;
+}
+.ail .setting .r .content {
+  padding: 10px;
+  cursor: pointer;
+  flex-grow: 1;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 225px;
+  max-width: 310px;
+  display: flex;
+  flex-direction: column;
+}
+.ail .setting .r .content .co {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.ail .setting .r .content .co .content-right {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+.ail .setting .r .content .co .content-left svg {
+  width: 25px;
+  transform: rotate(270deg);
+}
+.ail .setting .r .content .co .content-left svg path {
+  stroke: gray;
+}
+
+@media (max-width: 499px) {
+  .ail {
+    background-color: rgba(128, 128, 128, 0.048);
+    height: 100%;
+    font-weight: 400;
+  }
+  .ail .setting {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding-top: 120px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .ail .setting .r {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 98%;
+    margin: auto;
+    justify-content: end;
+  }
+  .ail .setting .r .content {
+    padding: 10px;
+    cursor: pointer;
+    flex-grow: 1;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 225px;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+  }
+  .ail .setting .r .content .co {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .ail .setting .r .content .co .content-right {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+  }
+  .ail .setting .r .content .co .content-right p {
+    font-size: 14px;
+  }
+  .ail .setting .r .content .co .content-right svg {
+    width: 25px;
+    height: 25px;
+  }
+  .ail .setting .r .content .co .content-left svg {
+    width: 25px;
+    transform: rotate(270deg);
+  }
+  .ail .setting .r .content .co .content-left svg path {
+    stroke: gray;
+  }
+}/*# sourceMappingURL=setting.css.map */

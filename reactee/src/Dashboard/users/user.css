@@ -1,0 +1,28 @@
+.user {
+  margin-top: 80px;
+  width: 100%;
+  padding: 20px;
+}
+.user table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+.user table tr:nth-child(even) {
+  background-color: #f1f7f8;
+}
+.user table th, .user table td {
+  border: solid 1px #a0c8cf;
+}
+.user table th {
+  background-color: #74afb9;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+.user table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}/*# sourceMappingURL=user.css.map */

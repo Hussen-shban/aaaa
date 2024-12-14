@@ -1,0 +1,473 @@
+.sign {
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px;
+}
+.sign .container {
+  display: grid;
+  place-items: center;
+}
+.sign .container form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  box-shadow: 0 2px 15px rgba(15, 15, 15, 0.0745098039);
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  position: relative;
+}
+.sign .container form input {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  transition: 0, 3s;
+  caret-color: #86b7fe;
+}
+.sign .container form input:focus {
+  border: solid 2px #86b7fe;
+}
+.sign .container form input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.sign .container form input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.sign .container form button {
+  width: 90px;
+  height: 50px;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  background-color: #86b7fe;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3S;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+}
+.sign .container form .svgg {
+  font-size: 25px;
+}
+.sign .container form .acceptpassword {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 100px;
+  right: -100px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.sign .container form .acceptpassword::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.sign .container form .password {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 200px;
+  right: -100px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.sign .container form .password::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.sign .container form .acceptname {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 380px;
+  right: -100px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.sign .container form .acceptname::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.sign .container form .acceptemail {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 280px;
+  right: -100px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.sign .container form .acceptemail::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.sign .container form .show-message {
+  opacity: 1;
+}
+
+body.swal2-toast-shown .swal2-container.swal2-top-end,
+body.swal2-toast-shown .swal2-container.swal2-top-right {
+  inset: 0 0 auto auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.swal2-popup.swal2-toast.swal2-show {
+  animation: swal2-toast-show 0.5s;
+  background: #86b7fe;
+}
+
+.swal2-timer-progress-bar {
+  background-color: white;
+}
+
+.swal2-popup.swal2-toast .swal2-title {
+  color: #ffffff;
+}
+
+.swal2-success-line-tip {
+  background-color: #ffffff;
+}
+
+.ico {
+  font-size: 140px;
+  position: relative;
+  top: 10px;
+}
+
+.swal2-popup.swal2-toast .swal2-title {
+  position: relative;
+  left: 0px;
+}
+
+@media (max-width: 499px) {
+  .sign {
+    padding-top: 70px;
+  }
+  .sign .container form {
+    width: 90%;
+  }
+  .sign .container form button {
+    width: 80px;
+    height: 50px;
+  }
+  .sign .container form .acceptpassword {
+    bottom: 120px;
+    right: -13px;
+    font-size: 13px;
+    width: 160px;
+    padding: 5px 12px;
+    text-align: center;
+  }
+  .sign .container form .acceptpassword::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .password {
+    bottom: 210px;
+    right: -13px;
+    font-size: 13px;
+    width: 160px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .password::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .acceptname {
+    bottom: 380px;
+    right: -13px;
+    font-size: 13px;
+    width: 160px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .acceptname::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .acceptemail {
+    bottom: 290px;
+    right: -13px;
+    font-size: 13px;
+    width: 160px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .acceptemail::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -6px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .show-message {
+    opacity: 1;
+  }
+}
+@media (min-width: 500px) and (max-width: 766px) {
+  .sign {
+    padding-top: 70px;
+  }
+  .sign .container form {
+    width: 60%;
+  }
+  .sign .container form button {
+    width: 80px;
+    height: 50px;
+  }
+  .sign .container form .acceptpassword {
+    bottom: 120px;
+    right: -80px;
+    font-size: 16px;
+    width: 210px;
+    padding: 5px 15px;
+    text-align: center;
+  }
+  .sign .container form .acceptpassword::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .password {
+    bottom: 210px;
+    right: -70px;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .password::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .acceptname {
+    bottom: 380px;
+    right: -70px;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .acceptname::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .acceptemail {
+    bottom: 290px;
+    right: -70px;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .acceptemail::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .show-message {
+    opacity: 1;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .sign {
+    padding-top: 70px;
+  }
+  .sign .container form {
+    width: 60%;
+  }
+  .sign .container form button {
+    width: 80px;
+    height: 50px;
+  }
+  .sign .container form .acceptpassword {
+    bottom: 120px;
+    right: 0px;
+    font-size: 16px;
+    width: 210px;
+    padding: 5px 15px;
+    text-align: center;
+  }
+  .sign .container form .acceptpassword::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .password {
+    bottom: 210px;
+    right: 15px;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .password::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .acceptname {
+    bottom: 380px;
+    right: 15px;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .acceptname::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .acceptemail {
+    bottom: 290px;
+    right: 15px;
+    font-size: 16px;
+    width: 200px;
+    padding: 5px 8px;
+    text-align: center;
+  }
+  .sign .container form .acceptemail::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #86b7fe;
+    transform: rotate(41deg);
+  }
+  .sign .container form .show-message {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=signup.css.map */

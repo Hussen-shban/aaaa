@@ -1,34 +1,72 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import SignUp from "./auth/signup/signup"
+import Login from "./auth/login/Login"
+import Dashboard from "./Dashboard/dashboard"
+import Updateuser from "./Dashboard/users/updateuser/Updateuser"
+import Home from "./home/Home"
+import { Route, Routes } from "react-router-dom";
+import RequireAuth from "./auth/requireauth/RequireAuth"
+import PersistLogin from "./auth/persistlogin/persistlogin"
+import CreatePost from "./Dashboard/post/createpost/CreatePost"
+import Comment from "./home/comment/Comment"
+import Chare from "./home/chare/Chare"
+import MyProfile from "./Dashboard/myprofile/MyProfile"
+import Showphoto from "./Dashboard/myprofile/showphoto/Showphoto"
+import UserProfile from "./home/userprofile/UserProfile"
+import Ail from "./ail"
+import Friends from "./Dashboard/friends/Friends"
+import Setting from "./Dashboard/setting/setting"
 function App() {
-  const [count, setCount] = useState(0)
+
+
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>💩 github</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div >
+
+
+
+      <Routes>
+      <Route element={<RequireAuth />}>
+      <Route element={<PersistLogin />}>
+   
+
+
+        <Route path="/ail" element={<Ail />} >
+
+
+          <Route path="home" element={<Home />} >
+            <Route path="comment/:id" element={<Comment />} />
+            <Route path="chare" element={<Chare />} />
+            <Route path="userprofile/:id" element={<UserProfile />} />
+          </Route>
+          <Route path="profile" element={<MyProfile />} />
+          <Route path="showphoto/:id" element={<Showphoto />} />
+          <Route path="addpost" element={<CreatePost />} />
+          <Route path="friends" element={<Friends/>}/>
+          <Route path="setting" element={<Setting/>} />
+
+
+        </Route>
+
+        </Route>
+        </Route>
+
+
+        <Route path="/register" element={<SignUp />} />
+        <Route path="/" element={<Login />} />
+        {/* protected routes */}
+   
+
+
+     
+ 
+        {/* protected routes */}
+
+      </Routes>
+
+
+    </div>
+
+
   )
 }
 

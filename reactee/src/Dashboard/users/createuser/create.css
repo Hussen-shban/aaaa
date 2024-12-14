@@ -1,0 +1,154 @@
+.create {
+  overflow: hidden;
+  height: 80vh;
+  padding-left: 20px;
+  margin-top: 80px;
+}
+.create .container {
+  display: flex;
+}
+.create .container form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 0px;
+  box-shadow: 0px 0px 0px rgba(15, 15, 15, 0.0745098039);
+}
+.create .container form input {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: solid 2px #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 8px;
+  transition: 0, 3s;
+  caret-color: #86b7fe;
+}
+.create .container form input:focus {
+  border: solid 2px #86b7fe;
+}
+.create .container form input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.create .container form input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.create .container form button {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  background-color: #86b7fe;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3S;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+}
+.create .container form .svgg {
+  font-size: 25px;
+}
+.create .container form .acceptpassword {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.create .container form .acceptpassword::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.create .container form .password {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 190px;
+  right: 0px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.create .container form .password::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.create .container form .acceptname {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 360px;
+  right: 0px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.create .container form .acceptname::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.create .container form .acceptemail {
+  color: #ffffff;
+  background-color: #86b7fe;
+  position: absolute;
+  bottom: 280px;
+  right: 0px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.create .container form .acceptemail::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #86b7fe;
+  transform: rotate(41deg);
+}
+.create .container form .show-message {
+  opacity: 1;
+}/*# sourceMappingURL=create.css.map */

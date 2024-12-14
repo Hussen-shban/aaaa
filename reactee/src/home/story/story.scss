@@ -1,0 +1,665 @@
+.story {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    gap: 10px;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 70px;
+
+    .create {
+        height: 230px;
+        width: 150px;
+        flex-shrink: 0;
+        // width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        background-color: rgba(128, 128, 128, 0.055);
+
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            object-position: center;
+
+            overflow: hidden;
+
+            img {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+
+                object-position: center;
+
+            }
+
+        }
+
+        .plus {
+
+
+            margin: auto;
+            width: fit-content;
+
+            svg {
+
+                width: 35px;
+                height: 35px;
+                padding: 2px;
+                background-color: #86b7fe;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                position: relative;
+                top: -10px;
+
+
+            }
+        }
+
+        p {
+            text-align: center;
+            font-weight: 600;
+            padding-bottom: 10px;
+        }
+
+        .photouser {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .photoprofile {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+            top: 12px;
+            right: 12px;
+            border: solid 3px #86b7fe;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .nameprofile {
+            position: absolute;
+            bottom: 0;
+            right: 15px;
+            // transform: translateX(50%);
+            color: #fff;
+            // text-align: center;
+
+        }
+
+    }
+
+}
+
+
+
+
+@media(max-width:499px) {
+
+    .story {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        gap: 10px;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 70px;
+
+        .create {
+
+            max-width: 95%;
+            height: 200px;
+            max-height: 200px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.055);
+            flex-shrink: 1;
+            gap: 10px;
+            flex-shrink: 0;
+
+            .photo {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+            }
+
+            .plus {
+
+                position: relative;
+                top: -60px;
+                margin: auto;
+                width: fit-content;
+
+                svg {
+
+                    width: 35px;
+                    height: 35px;
+                    padding: 2px;
+                    background-color: #86b7fe;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+
+
+
+                }
+
+            }
+
+            p {
+                text-align: center;
+                font-weight: 500;
+                font-size: 14px;
+                padding-bottom: 10px;
+                position: relative;
+                top: -72px;
+            }
+
+            .photouser {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .photoprofile {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                overflow: hidden;
+                border-radius: 50%;
+                top: 7px;
+                right: 5px;
+                border: solid 3px #86b7fe;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .nameprofile {
+                position: relative;
+                top: -30px;
+                right: -1px;
+                color: #fff;
+            }
+        }
+    }
+
+
+}
+
+@media(min-width:500px) and (max-width:766px) {
+
+    .story {
+        width: 90%;
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        gap: 10px;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 70px;
+
+        .create {
+
+            // max-width: 115px;
+            max-width: 95%;
+
+            height: 200px;
+            max-height: 200px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.055);
+            flex-shrink: 1;
+            gap: 10px;
+            flex-shrink: 0;
+
+            .photo {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+            }
+
+            .plus {
+
+                position: relative;
+                top: -60px;
+                margin: auto;
+                width: fit-content;
+
+                svg {
+
+                    width: 35px;
+                    height: 35px;
+                    padding: 2px;
+                    background-color: #86b7fe;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+
+
+
+                }
+
+            }
+
+            p {
+                text-align: center;
+                font-weight: 500;
+                font-size: 14px;
+                padding-bottom: 10px;
+                position: relative;
+                top: -72px;
+            }
+
+            .photouser {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .photoprofile {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                overflow: hidden;
+                border-radius: 50%;
+                top: 7px;
+                right: 5px;
+                border: solid 3px #86b7fe;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .nameprofile {
+                position: relative;
+                top: -30px;
+                right: -15px;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+@media(min-width:767px) and (max-width:991px) {
+
+
+    .story {
+        width: 60%;
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        gap: 10px;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 70px;
+
+        .create {
+
+            // max-width: 115px;
+            max-width: 95%;
+
+            height: 200px;
+            max-height: 200px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.055);
+            flex-shrink: 1;
+            gap: 10px;
+            flex-shrink: 0;
+
+            .photo {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+            }
+
+            .plus {
+
+                position: relative;
+                top: -60px;
+                margin: auto;
+                width: fit-content;
+
+                svg {
+
+                    width: 35px;
+                    height: 35px;
+                    padding: 2px;
+                    background-color: #86b7fe;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+
+
+
+                }
+
+            }
+
+            p {
+                text-align: center;
+                font-weight: 500;
+                font-size: 14px;
+                padding-bottom: 10px;
+                position: relative;
+                top: -72px;
+            }
+
+            .photouser {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .photoprofile {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                overflow: hidden;
+                border-radius: 50%;
+                top: 7px;
+                right: 5px;
+                border: solid 3px #86b7fe;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .nameprofile {
+                position: relative;
+                top: -30px;
+                right: -1px;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+
+    .story {
+        width: 60%;
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        gap: 10px;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 70px;
+
+        .create {
+
+            // max-width: 115px;
+            max-width: 95%;
+
+            height: 220px;
+            max-height: 250px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.055);
+            flex-shrink: 1;
+            gap: 10px;
+            flex-shrink: 0;
+
+            .photo {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+            }
+
+            .plus {
+
+                position: relative;
+                top: -60px;
+                margin: auto;
+                width: fit-content;
+
+                svg {
+
+                    width: 35px;
+                    height: 35px;
+                    padding: 2px;
+                    background-color: #86b7fe;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+
+
+
+                }
+
+            }
+
+            p {
+                text-align: center;
+                font-weight: 500;
+                font-size: 14px;
+                padding-bottom: 10px;
+                position: relative;
+                top: -72px;
+            }
+
+            .photouser {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .photoprofile {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                overflow: hidden;
+                border-radius: 50%;
+                top: 7px;
+                right: 5px;
+                border: solid 3px #86b7fe;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .nameprofile {
+                position: relative;
+                top: -30px;
+                right: -1px;
+                color: #fff;
+            }
+        }
+    }
+
+}
+
+@media(min-width:1200px) {
+
+    
+    .story {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        gap: 10px;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 70px;
+
+        .create {
+
+            // max-width: 115px;
+            max-width: 99% !important;
+
+            height: 240px;
+            max-height: 250px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            background-color: rgba(128, 128, 128, 0.055);
+            flex-shrink: 1;
+            gap: 10px;
+            flex-shrink: 0;
+
+            .photo {
+                width: 100%;
+                height: 100%;
+                object-position: center;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 70%;
+                    object-fit: cover;
+                }
+            }
+
+            .plus {
+
+                position: relative;
+                top: -60px;
+                margin: auto;
+                width: fit-content;
+
+                svg {
+
+                    width: 35px;
+                    height: 35px;
+                    padding: 2px;
+                    background-color: #86b7fe;
+                    border-radius: 50%;
+                    border: 2px solid #fff;
+
+
+
+                }
+
+            }
+
+            p {
+                text-align: center;
+                font-weight: 500;
+                font-size: 14px;
+                padding-bottom: 10px;
+                position: relative;
+                top: -72px;
+            }
+
+            .photouser {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .photoprofile {
+                position: absolute;
+                width: 45px;
+                height: 45px;
+                overflow: hidden;
+                border-radius: 50%;
+                top: 7px;
+                right: 5px;
+                border: solid 3px #86b7fe;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .nameprofile {
+                position: relative;
+                top: -30px;
+                right: -40px;
+                color: #fff;
+            }
+        }
+    }
+}

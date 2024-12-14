@@ -1,0 +1,407 @@
+.createpost {
+    .create {
+        overflow: hidden;
+        height: 100%;
+        padding-top: 100px;
+        padding-left: 20px;
+        margin-top: 0px !important;
+        display: grid;
+        place-items: center;
+        width: 100%;
+
+
+
+        .container {
+            display: flex;
+            // padding-top: 20px;
+            width: 50%;
+
+
+            form {
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                border-radius: 10px;
+                font-weight: 600;
+                position: relative;
+                padding-left: 0px;
+                box-shadow: 0px 0px 0px #0f0f0f13;
+
+
+                input {
+                    padding: 10px 20px;
+                    width: 100%;
+                    outline: none;
+                    border: solid 2px #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 8px;
+                    transition: 0, 3s;
+                    caret-color: #86b7fe;
+
+                    &:focus {
+                        border: solid 2px #86b7fe;
+
+                    }
+
+                    &::placeholder {
+                        color: rgba(0, 0, 0, 0.3);
+
+                    }
+                }
+
+                button {
+
+                    width: 80px;
+                    height: 50px;
+                    // margin: auto;
+                    border: solid 2px #ffffff;
+                    color: #ffffff;
+                    background-color: #86b7fe;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    outline: none;
+                    transition: 0.3S;
+                    font-size: 16px;
+                    display: grid;
+                    place-items: center;
+
+
+
+                }
+
+                .svgg {
+                    font-size: 25px;
+                }
+
+
+
+                .acceptname {
+                    color: #ffffff;
+                    background-color: #86b7fe;
+                    position: absolute;
+                    bottom: 280px;
+                    right: -0px;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    opacity: 0;
+                    transition: opacity 0.2s ease;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: -5px;
+                        width: 0;
+                        height: 0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-top: 10px solid #86b7fe;
+                        transform: rotate(41deg);
+                    }
+                }
+
+
+                .acceptemail {
+                    color: #ffffff;
+                    background-color: #86b7fe;
+                    position: absolute;
+                    bottom: 190px;
+                    right: -0px;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    opacity: 0;
+                    transition: opacity 0.2s ease;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: -5px;
+                        width: 0;
+                        height: 0;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-top: 10px solid #86b7fe;
+                        transform: rotate(41deg);
+                    }
+                }
+
+                .photo {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    width: 180px;
+                    height: 50px;
+                    outline: none;
+                    border: solid 2px #ffffff;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+
+                    .photo-flex {
+                        padding: 10px;
+                        display: flex;
+                        gap: 10px;
+
+                        p {
+                            color: rgba(0, 0, 0, 0.3);
+
+                        }
+                    }
+
+                    input {
+                        display: none;
+                    }
+
+                }
+
+                .show-message {
+                    opacity: 1;
+                }
+                .nooo{
+                    display: flex;
+                    align-items: center;
+                    justify-content:start;
+                    flex-direction: row-reverse;
+                    gap: 10px;
+                }
+
+
+
+            }
+
+        }
+
+    }
+}
+
+
+
+@media(max-width:499px) {
+
+    .createpost {
+
+        .create {
+            overflow: hidden;
+            height: 100%;
+            padding-top: 100px;
+            padding-left: 20px;
+            margin-top: 0px !important;
+            display: grid;
+            place-items: center;
+            width: 100%;
+    
+    
+            .container {
+                display: flex;
+                // padding-top: 20px;
+                width: 100%;
+    
+    
+
+    
+            }
+    
+        }
+    }
+
+}
+
+@media(min-width:500px) and (max-width:766px) {
+
+
+}
+
+@media(min-width:767px) and (max-width:991px) {
+
+
+}
+
+@media(min-width:992px) and (max-width:1199px) {}
+
+@media(min-width:1200px) {
+
+
+    .createpost {
+        .create {
+            overflow: hidden;
+            height: 100%;
+            padding-top: 100px;
+            padding-left: 20px;
+            margin-top: 0px !important;
+            display: grid;
+            place-items: center;
+            width: 100%;
+    
+    
+    
+            .container {
+                display: flex;
+                // padding-top: 20px;
+                width: 50%;
+    
+    
+                form {
+                    width: 100%;
+    
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    position: relative;
+                    padding-left: 0px;
+                    box-shadow: 0px 0px 0px #0f0f0f13;
+    
+    
+                    input {
+                        padding: 10px 20px;
+                        width: 100%;
+                        outline: none;
+                        border: solid 2px #ffffff;
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+                        margin-bottom: 8px;
+                        transition: 0, 3s;
+                        caret-color: #86b7fe;
+    
+                        &:focus {
+                            border: solid 2px #86b7fe;
+    
+                        }
+    
+                        &::placeholder {
+                            color: rgba(0, 0, 0, 0.3);
+    
+                        }
+                    }
+    
+                    button {
+    
+                        width: 80px;
+                        height: 50px;
+                        // margin: auto;
+                        border: solid 2px #ffffff;
+                        color: #ffffff;
+                        background-color: #86b7fe;
+                        border-radius: 5px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        outline: none;
+                        transition: 0.3S;
+                        font-size: 16px;
+                        display: grid;
+                        place-items: center;
+    
+    
+    
+                    }
+    
+                    .svgg {
+                        font-size: 25px;
+                    }
+    
+    
+    
+                    .acceptname {
+                        color: #ffffff;
+                        background-color: #86b7fe;
+                        position: absolute;
+                        bottom: 280px;
+                        right: -0px;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        opacity: 0;
+                        transition: opacity 0.2s ease;
+    
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -2px;
+                            left: -5px;
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-top: 10px solid #86b7fe;
+                            transform: rotate(41deg);
+                        }
+                    }
+    
+    
+                    .acceptemail {
+                        color: #ffffff;
+                        background-color: #86b7fe;
+                        position: absolute;
+                        bottom: 190px;
+                        right: -0px;
+                        padding: 10px 20px;
+                        border-radius: 20px;
+                        opacity: 0;
+                        transition: opacity 0.2s ease;
+    
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -2px;
+                            left: -5px;
+                            width: 0;
+                            height: 0;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                            border-top: 10px solid #86b7fe;
+                            transform: rotate(41deg);
+                        }
+                    }
+    
+                    .photo {
+                        margin-top: 10px;
+                        margin-bottom: 20px;
+                        width: 180px;
+                        height: 50px;
+                        outline: none;
+                        border: solid 2px #ffffff;
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);
+    
+                        .photo-flex {
+                            padding: 10px;
+                            display: flex;
+                            gap: 10px;
+    
+                            p {
+                                color: rgba(0, 0, 0, 0.3);
+    
+                            }
+                        }
+    
+                        input {
+                            display: none;
+                        }
+    
+                    }
+    
+                    .show-message {
+                        opacity: 1;
+                    }
+                    .nooo{
+                        display: flex;
+                        align-items: center;
+                        justify-content:start;
+                        flex-direction: row-reverse;
+                        gap: 10px;
+                    }
+    
+    
+    
+                }
+    
+            }
+    
+        }
+    }
+
+
+}
